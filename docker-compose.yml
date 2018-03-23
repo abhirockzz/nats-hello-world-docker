@@ -12,6 +12,6 @@ publisher:
     - natsio:server
 
 subscriber:
-    build: subscriber
+    build: go_subscriber
     links:
     - natsio:server
