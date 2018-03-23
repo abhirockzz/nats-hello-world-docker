@@ -1,3 +1,9 @@
+## Start by...
+
+- `git clone https://github.com/abhirockzz/nats-hello-world-docker.git`
+
+- `cd nats-hello-world-docker`
+
 ## To run
 
 `docker-compose build --no-cache` //build containers
