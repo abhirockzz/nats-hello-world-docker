@@ -1,17 +1,15 @@
-natsio:
-    image: nats
-    container_name: natsio-server
-    ports:
-      - "4222:4222"
-    ports:
-      - "8222:8222"
-
-publisher:
-    build: java_publisher
-    links:
-    - natsio:server
-
-subscriber:
-    build: go_subscriber
-    links:
-    - natsio:server
+version: '3'
+services:
+    server:
+        image: nats
+        container_name: natsio-server
+        ports:
+            - '4222:4222'
+    publisher:
+        build: java_publisher
+        depends_on:
+            - server
+    subscriber:
+        build: go_subscriber
+        depends_on:
+            - server
