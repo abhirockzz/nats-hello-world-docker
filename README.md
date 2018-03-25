@@ -14,7 +14,19 @@ Give it a few seconds
 
 `docker-compose up` //start containers
 
-## check `docker-compose` logs
+## check
+
+### check NATS console
+
+`http://<docker_host_ip>:8222`
+
+![](https://simplydistributed.files.wordpress.com/2018/03/nats-console.jpg)
+
+`http://<docker_host_ip>:8222/connz`
+
+![](https://simplydistributed.files.wordpress.com/2018/03/nats-connz.jpg)
+
+### check `docker-compose` logs
 
 Pub and sub... the usual stuff
 
