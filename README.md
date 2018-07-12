@@ -1,8 +1,9 @@
 ## Start by...
 
 - `git clone https://github.com/abhirockzz/nats-hello-world-docker.git`
-
-- `cd nats-hello-world-docker`
+- `cd nats-hello-world-docker/java-publisher`
+- `mvn clean install`
+- `cd ..`
 
 ## To run
 
